@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+}
+
+.header .box-header {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.header .box-header .header-container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.header .box-header .box:nth-child(1) .header-container .menu-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+
+    margin-bottom: 70px;
+}
+
+.header .box-header .box:nth-child(1) {
+    background-color: black;
+}
+
+.header .box-header .box:nth-child(1) .header-container .menu-nav h2 {
+    color: white;
+}
+
+.header .box-header .box:nth-child(1) .header-container .menu-nav ul {
+    display: flex;
+}
+
+.header .box-header .box:nth-child(1) .header-container .menu-nav ul li {
+    margin-inline: 20px;
+    list-style-type: none;
+}
+
+.header .box-header .box:nth-child(1) .header-container .menu-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header .box-header .box:nth-child(1) .header-container .menu-nav ul li a:hover {
+    color: #316acc;
+}
+
+.header .box-header .box:nth-child(1) .header-container .title {
+    margin-bottom: 20px;
+}
+
+.header .box-header .box:nth-child(1) .header-container .title h1 {
+    color: white;
+    line-height: 1.2;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.header .box-header .box:nth-child(1) .header-container .title p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header .box-header .box:nth-child(1) .header-container form {
+    position: absolute;
+    z-index: 1001;
+    display: flex;
+    background-color: white;
+    padding: 8px;
+
+    width: 55%;
+}
+
+.header .box-header .box:nth-child(1) .header-container form input {
+    border: none;
+    width: 100%;
+    height: 50px;
+
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.header .box-header .box:nth-child(1) .header-container .info {
+    margin-top: 120px;
+    display: flex;
+    column-gap: 30px;
+}
+
+.header .box-header .box:nth-child(1) .header-container .info .box h1 {
+    color: white;
+}
+
+.header .box-header .box:nth-child(1) .header-container .info .box h1 i {
+    color: #316acc;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.header .box-header .box:nth-child(1) .header-container .info .box p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header .box-header .box:nth-child(1) .header-container form input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.header .box-header .box:nth-child(1) .header-container form input:focus {
+    outline: none;
+}
+
+.header .box-header .box:nth-child(1) .header-container form button {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+    cursor: pointer;
+    border: none;
+
+    transition: all 0.3s ease;
+}
+
+.header .box-header .box:nth-child(1) .header-container form button:hover {
+    background-color: #1b4ea7;
+}
+
+
+.header .box-header .box:nth-child(2) {
+    position: relative;
+}
+
+.header .box-header .box:nth-child(2) img {
+    width: 100%;
+    height: 100%;
+}
+
+.header .box-header .box:nth-child(2) .bg-black {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    filter: opacity(40%);
+    z-index: 100;
+
+}

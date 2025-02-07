@@ -190,6 +190,96 @@
     margin-right: 5px;
 }
 
+
+
+/* ******************************************************************** */
+
+
+
+/* Apartment */
+.apartment {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 80px;
+    /* margin-top: 100px; */
+    padding-bottom: 100px;
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.apartment .container .box-apartment .box {
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.apartment .container .box-apartment .box img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.apartment .container .box-apartment .box .description .star i {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.apartment .container .box-apartment .box .description h3 {
+    margin-bottom: 5px;
+}
+
+.apartment .container .box-apartment .box .description p {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.apartment .container .box-apartment .box .description button {
+    width: 120px;
+    background-color: #1b4ea7;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.apartment .container .box-apartment .box .description button:hover {
+    background-color: #6092ea;
+}
+
+.apartment .container .box-apartment {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 10px;
+    row-gap: 30px;
+}
+
+/* Apartment */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1200px) {
     .header .box-header .box:nth-child(1) .header-container .menu-nav ul li {
         margin-inline: 0;
@@ -364,5 +454,19 @@
 
     .header .box-header .box:nth-child(1) .header-container .info h1 i {
         font-size: 20px;
+    }
+}
+
+/* Apartment media queries */
+@media screen and (max-width: 370px) {
+    .apartment .container .box-apartment {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media screen and (max-width: 393px) {
+    .apartment {
+        padding-top: 30px;
+        margin-top: 100px;
     }
 }

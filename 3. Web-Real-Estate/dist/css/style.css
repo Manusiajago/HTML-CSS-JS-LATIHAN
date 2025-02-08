@@ -301,8 +301,48 @@
 .about {
     width: 100%;
     height: 100vh;
+
+    display: grid;
+    align-items: center;
 }
 
+.about .container .box-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 50px;
+}
+
+.about .container .box-about .box:nth-child(1) img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about .container .box-about .box:nth-child(2) h1 {
+    margin-bottom: 10px;
+}
+
+.about .container .box-about .box:nth-child(2) p {
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.about .container .box-about .box:nth-child(2) button {
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 5px;
+
+    color: white;
+    background-color: #316acc;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about .container .box-about .box:nth-child(2) button:hover {
+    background-color: #6092ea;
+}
 
 /* About */
 

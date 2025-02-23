@@ -40,7 +40,70 @@
 
 }
 
-/* Header */
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img {
+    width: 100%;
+}
+
+.section-content {
+    margin: 0 auto;
+    padding: 1 20px;
+    max-width: var(--site-max-width);
+}
+
+/* Navbar styling */
 header {
     background-color: var(--primary-color);
+}
+
+.navbar .nav-menu .nav-link {
+    color: var(--white-color);
+}
+
+.navbar .nav-logo .logo-text {
+    color: var(--white-color);
+
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+.navbar .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .nav-menu .nav-item .nav-link {
+    padding: 10px 18px;
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+    ;
+}
+
+.navbar .nav-menu .nav-item .nav-link:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }

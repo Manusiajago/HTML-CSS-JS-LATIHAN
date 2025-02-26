@@ -98,6 +98,8 @@ header .navbar {
     gap: 10px;
 }
 
+
+
 .navbar .nav-menu .nav-item .nav-link {
     padding: 10px 18px;
     color: var(--white-color);
@@ -110,6 +112,11 @@ header .navbar {
 .navbar .nav-menu .nav-item .nav-link:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
+}
+
+.navbar #menu-close-button,
+.navbar #menu-open-button {
+    display: none;
 }
 
 /* Hero section */
@@ -179,4 +186,92 @@ header .navbar {
 .hero-section .hero-image-wrapper {
     max-width: 500px;
     margin-right: 30px;
+}
+
+@media screen and (max-width: 900px) {
+
+    :root {
+        --font-size-m: 1rem;
+        --font-size-l: 1.3rem;
+        --font-size-xl: 1.5rem;
+        --font-size-xxl: 1.8rem;
+    }
+
+    body.show-mobile-menu header::before {
+        content: '';
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar #menu-close-button,
+    .navbar #menu-open-button {
+        display: block;
+        font-size: var(--font-size-l);
+    }
+
+    .navbar #menu-close-button {
+        position: absolute;
+        right: 30px;
+        top: 40px;
+    }
+
+    .navbar #menu-open-button {
+        color: var(--white-color);
+    }
+
+    .navbar .nav-menu {
+        display: block;
+        position: fixed;
+        left: -400px;
+        top: 0;
+        width: 400px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        background-color: var(--white-color);
+        transition: left 0.5s ease;
+    }
+
+    body.show-mobile-menu .navbar .nav-menu {
+        left: 0;
+    }
+
+    .navbar .nav-menu .nav-item .nav-link {
+        color: var(--dark-color);
+        font-size: var(--font-size-l);
+
+        display: block;
+        margin-top: 17px;
+        font-size: var(--font-size-l);
+    }
+
+    .hero-section .section-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 30px 20px 20px;
+        text-align: center;
+
+        gap: 50px;
+    }
+
+    .hero-section .section-content .hero-details :is(.subtitle, .description) {
+        max-width: 100%;
+    }
+
+    .hero-section .section-content .hero-details .buttons {
+        justify-content: center;
+    }
+
+    .hero-section .hero-image-wrapper {
+        max-width: 270px;
+        margin-right: 0;
+    }
+
 }

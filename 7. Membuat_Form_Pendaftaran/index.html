@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Membuat Form</title>
+
+    <!-- Preconnect untuk optimasi loading font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Import Poppins dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Link eksternal CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Container utama halaman -->
+    <div class="container">
+        <div class="form-wrapper">
+            <!-- Judul Form -->
+            <h1>Selamat datang di formulir pendaftaran</h1>
+
+            <!-- Form registrasi utama -->
+            <form id="registrationForm" class="registration-form">
+                <!-- Input username -->
+                <div class="form-group">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" id="username" name="username" class="form-input"
+                        placeholder="Masukkan username anda" required>
+                </div>
+
+                <!-- Input nama lengkap dan info tambahan -->
+                <div class="form-group">
+                    <label for="fullname" class="form-label">Nama Lengkap: </label>
+                    <input type="text" id="fullname" name="fullname" class="form-input" required
+                        placeholder="Masukkan nama lengkap">
+                    <small class="input-info">Masukkan nama sesuai identitas</small>
+                </div>
+
+                <!-- Input email -->
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Masukkan email anda"
+                        required>
+                </div>
+
+                <!-- Input password -->
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" name="password" class="form-input" required
+                        placeholder="Masukkan password anda">
+                </div>
+
+                <!-- Input konfirmasi password dan informasi tambahan -->
+                <div class="form-group">
+                    <label for="confirmPassword" class="form-label">Konfirmasi password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="form-input"
+                        placeholder="Konfirmasi password anda" required>
+                    <small class="input-info">Pastikan password sesuai</small>
+                </div>
+
+                <!-- checkbox persetujuan aturan  -->
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label" for="agreement">
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        <span class="checkmark"></span>
+                        <span class="checkbox-text">
+                            Saya menyetujui <span class="terms-link">aturan pakai</span> yang berlaku
+                        </span>
+                    </label>
+                </div>
+
+                <!-- Tombol submit utama -->
+                <button type="submit" class="submit-btn">Daftar</button>
+
+                <!-- pembatas antara tombol utama dan sosial -->
+                <div class="divider">
+                    <span>Atau, daftar menggunakan media sosial</span>
+                </div>
+
+                <!-- tombol-tombol media sosial -->
+                <div class="social-buttons">
+                    <!-- Tombol google -->
+                    <button type="button" class="social-btn google-btn">
+                        <span class="social-icon">G</span>
+                        google
+                    </button>
+
+                    <!-- Tombol FB -->
+                    <button type="button" class="social-btn facebook-btn">
+                        <span class="social-icon">f</span>
+                        Facebook
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Link ke javascript eksternal -->
+</body>
+
+</html>

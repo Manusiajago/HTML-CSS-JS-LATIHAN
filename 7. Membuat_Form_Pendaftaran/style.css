@@ -5,3 +5,90 @@
 }
 
 /* styling untuk body halaman */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container utama untuk form */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* wrapper form */
+.container .form-wrapper {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Judul form */
+.form-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 40px;
+    letter-spacing: -0.5px;
+}
+
+/* form registrasi dengan grid layout */
+.registration-form {
+
+    display: grid;
+    gap: 24px;
+}
+
+/* form group */
+.form-group {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* styling untuk label */
+.form-label {
+    font-weight: 500;
+    color: #555;
+    font-size: 14px;
+    padding-top: 12px;
+    /* Sejajar dengan input */
+    text-align: right;
+}
+
+/* wrapper untuk input yg memiliki informasi tambahan */
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* styling untuk semua input form */
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background: #fafbfc;
+}
+
+/* Efek saat input mendapatkan fokus */
+.form-input:focus {
+    outline: none;
+    border-color: #ec4899;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.1);
+}

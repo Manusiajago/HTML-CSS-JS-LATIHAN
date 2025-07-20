@@ -26,7 +26,7 @@
     <div class="container">
         <div class="form-wrapper">
             <!-- Judul Form -->
-            <h1>Selamat datang di formulir pendaftaran</h1>
+            <h1 class="form-title">Form Pendaftaran</h1>
 
             <!-- Form registrasi utama -->
             <form id="registrationForm" class="registration-form">
@@ -62,9 +62,11 @@
                 <!-- Input konfirmasi password dan informasi tambahan -->
                 <div class="form-group">
                     <label for="confirmPassword" class="form-label">Konfirmasi password</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" class="form-input"
-                        placeholder="Konfirmasi password anda" required>
-                    <small class="input-info">Pastikan password sesuai</small>
+                    <div class="input-wrapper">
+                        <input type="password" id="confirmPassword" name="confirmPassword" class="form-input"
+                            placeholder="Konfirmasi password anda" required>
+                        <small class="input-info">Pastikan password sesuai</small>
+                    </div>
                 </div>
 
                 <!-- checkbox persetujuan aturan  -->

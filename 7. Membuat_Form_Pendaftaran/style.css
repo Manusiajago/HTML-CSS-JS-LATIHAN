@@ -250,3 +250,157 @@ body {
     transition: all 0.3s ease;
     font-family: inherit;
 }
+
+.social-buttons .social-btn .social-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* googel icon */
+.google-btn .social-icon {
+    background: white;
+    color: #ea4335;
+}
+
+/* Efek hover tombol Google */
+.google-btn:hover {
+    background: #d93025;
+    /* Merah lebih gelap */
+    transform: translateY(-1px);
+    /* Naik sedikit */
+    box-shadow: 0 5px 15px rgba(234, 67, 53, 0.3);
+    /* Shadow merah */
+}
+
+/* Tombol facebook */
+.facebook-btn .social-btn {
+    background: white;
+    color: #1877f2;
+}
+
+.facebook-btn:hover {
+    background: #166fe5;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3);
+    color: white;
+}
+
+/* Styling untuk input yang error */
+.form-input.error {
+    border-color: #ef4444;
+    /* Border merah */
+    background: #fef2f2;
+    /* Background merah muda */
+}
+
+/* Pesan error */
+.error-message {
+    color: #ef4444;
+    /* Warna merah */
+    font-size: 12px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+/* Pesan sukses */
+.success-message {
+    background: #10b981;
+    /* Background hijau */
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+    animation: slideDown 0.3s ease;
+    /* Animasi slide dari atas */
+}
+
+/* Animasi slide down untuk pesan sukses */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        /* Mulai transparan */
+        transform: translateY(-10px);
+        /* Mulai dari atas */
+    }
+
+    to {
+        opacity: 1;
+        /* Menjadi terlihat */
+        transform: translateY(0);
+        /* Ke posisi normal */
+    }
+}
+
+/* Responsive Design untuk tablet dan mobile */
+@media (max-width: 768px) {
+
+    /* Kurangi padding form pada tablet */
+    .form-wrapper {
+        padding: 30px 20px;
+    }
+
+    /* Kurangi ukuran judul */
+    .form-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    /* Ubah layout menjadi 1 kolom */
+    .form-group {
+        grid-template-columns: 1fr;
+        /* Satu kolom penuh */
+        gap: 8px;
+    }
+
+    /* Label rata kiri dan bold pada mobile */
+    .form-label {
+        text-align: left;
+        padding-top: 0;
+        font-weight: 600;
+    }
+
+    /* Tombol sosial jadi 1 kolom */
+    .social-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    /* Tambah padding tombol sosial */
+    .social-btn {
+        padding: 14px 20px;
+    }
+}
+
+/* Responsive design untuk mobile kecil */
+@media (max-width: 480px) {
+
+    /* Kurangi padding body */
+    body {
+        padding: 10px;
+    }
+
+    /* Kurangi padding form lebih lanjut */
+    .form-wrapper {
+        padding: 20px 15px;
+    }
+
+    /* Ukuran judul lebih kecil */
+    .form-title {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    /* Sesuaikan ukuran tombol submit */
+    .submit-btn {
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+}

@@ -80,6 +80,38 @@ const validateForm = (() => {
     }
 
     // lalu validasi nama lengkap
+    if (!fullname) {
+        showError(document.getElementById('fullname'), "Nama lengkao harus di isi bro");
+        isValid = false;
+    } else if (fullname.length < 2) {
+        showError(document.getElementById('fullname'), "Nama lengkap minimal 2 karakter")
+    }
+
+    //  Validasi Email
+    if (!email) {
+        showError(document.getElementById('email'), "Email harus di isi");
+        isValid = false;
+    } else if (!isValidEmail(email)) {
+        showError(document.getElementById('email'), "Email tidak valid");
+        isValid = false;
+    }
+
+    // validasi password
+    if (!confirmPassword) {
+        showError(document.getElementById('password', "Password harus di isi"));
+        isValid = false;
+    } else if (password !== confirmPassword) {
+        showError(document.getElementById('password', "Password tidak cocok"));
+        isValid = false
+    }
+
+    // validasi persetujuan aturan
+    if (!agreement) {
+        alert(`Anda harus menyetujui aturan pakai untuk melanjutkan pendaftaran`);
+        isValid = false;
+    }
+
+    return isValid;
 
 })
 

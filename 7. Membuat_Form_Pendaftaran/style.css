@@ -92,3 +92,161 @@ body {
     background: white;
     box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.1);
 }
+
+.input-info {
+    color: #888;
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    /* Jarak antara checkbox dan teks */
+    cursor: pointer;
+    /* Kursor pointer */
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Sembunyikan checkbox default */
+.checkbox-label input[type="checkbox"] {
+    display: none;
+}
+
+/* custom checkbox */
+.checkmark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ec4899;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* checkbox saat di centang */
+.checkbox-label input[type="checkbox"]:checked+.checkmark {
+    background: #cc4899;
+}
+
+/* centang di dalam checkbox */
+.checkbox-label input[type="checkbox"]:checked+.checkmark::after {
+    content: '✓';
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* link aturan pakai */
+.terms-link {
+    color: #ec4899;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* efek hover pada link aturan pakai */
+.terms-link:hover {
+    color: be185d;
+}
+
+/* Tombol submit utama */
+.submit-btn {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #ec4899), #be185d;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0s ease;
+    font-family: inherit;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(236, 72, 153, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* pembatas antara form dan tombol utama */
+.divider {
+    grid-column: 1 / -1;
+    /* Menggunakan seluruh lebar grid */
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+    color: #888;
+    /* Warna abu-abu */
+    font-size: 12px;
+}
+
+
+.divider::before {
+    content: '';
+    /* Konten kosong */
+    position: absolute;
+    top: 50%;
+    /* Di tengah vertikal */
+    left: 0;
+    right: 0;
+    height: 1px;
+    /* Tinggi garis */
+    background: #e1e5e9;
+    /* Warna abu-abu muda */
+    z-index: 1;
+    /* Di belakang teks */
+}
+
+.divider span {
+    background: white;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Container untuk tombol sosial */
+.social-buttons {
+    grid-column: 1 / -1;
+    /* Menggunakan seluruh lebar grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Dua kolom sama lebar */
+    gap: 16px;
+    /* Jarak antar tombol */
+}
+
+.social-buttons .social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}

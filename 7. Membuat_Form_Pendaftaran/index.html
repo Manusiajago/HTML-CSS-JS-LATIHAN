@@ -40,10 +40,13 @@
                 <!-- Input nama lengkap dan info tambahan -->
                 <div class="form-group">
                     <label for="fullname" class="form-label">Nama Lengkap: </label>
-                    <input type="text" id="fullname" name="fullname" class="form-input" required
-                        placeholder="Masukkan nama lengkap">
-                    <small class="input-info">Masukkan nama sesuai identitas</small>
+                    <div class="input-wrapper">
+                        <input type="text" id="fullname" name="fullname" class="form-input" required
+                            placeholder="Masukkan nama lengkap">
+                        <small class="input-info">Masukkan nama sesuai identitas</small>
+                    </div>
                 </div>
+
 
                 <!-- Input email -->
                 <div class="form-group">
@@ -71,7 +74,7 @@
 
                 <!-- checkbox persetujuan aturan  -->
                 <div class="form-group checkbox-group">
-                    <label class="checkbox-label" for="agreement">
+                    <label for="agreement" class="checkbox-label">
                         <input type="checkbox" id="agreement" name="agreement" required>
                         <span class="checkmark"></span>
                         <span class="checkbox-text">

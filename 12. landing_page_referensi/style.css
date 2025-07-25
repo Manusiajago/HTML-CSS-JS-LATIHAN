@@ -65,3 +65,62 @@ nav ul li a {
 nav a:hover {
     color: #007bff;
 }
+
+/* Hero styles */
+.hero {
+    max-width: 1200px;
+    display: grid;
+    margin: 2rem auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+}
+
+.hero .hero-image {
+    width: 100%;
+    height: 300px;
+    background: white;
+}
+
+.hero .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    margin-bottom: 1.5rem;
+    color: #666;
+    max-width: 500px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 1rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta-button.primary-cta {
+    background-color: #007bff;
+    color: white;
+}
+
+.cta-button.primary-cta:hover {
+    background-color: #0056b3;
+}
+
+.cta-button.secondary-cta {
+    border: 2px solid #007bff;
+    color: #007bff;
+}

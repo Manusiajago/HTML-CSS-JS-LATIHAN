@@ -24,6 +24,14 @@
     padding: 5rem 1rem;
 }
 
+.section-header {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+    color: var(--primary-color);
+}
+
 /* Nav */
 nav {
     position: fixed;

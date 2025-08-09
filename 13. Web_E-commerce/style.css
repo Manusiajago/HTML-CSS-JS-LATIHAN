@@ -237,6 +237,44 @@ body {
 
 }
 
+/* Section Product */
+.product-container {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.product-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+.product-card {
+    padding: 1rem;
+    text-align: center;
+}
+
+.product-card h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.product-card p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
+.product-card img {
+    max-width: 275px;
+    margin-inline: auto;
+}
+
+
 
 
 
@@ -278,6 +316,11 @@ body {
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
     }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Tambahan sedikit */
@@ -285,6 +328,12 @@ body {
     .about-content {
         grid-template-columns: 1fr;
         align-items: center;
+    }
+
+    /* section product */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -384,6 +433,12 @@ body {
     .about-content {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
+    }
+
+    /* section produk */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
 

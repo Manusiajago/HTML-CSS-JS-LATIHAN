@@ -274,7 +274,66 @@ body {
     margin-inline: auto;
 }
 
+/* Section client */
+.client-content {
+    padding: 4rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--extra-light);
+}
 
+.client-content :is(.section-header, .section-description) {
+    max-width: 550px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.client-content .section-header {
+    font-size: 3.25rem;
+}
+
+.swiper {
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.client-card {
+    display: flex;
+    gap: 2rem;
+    max-width: 750px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.client-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.client-card img {
+    max-width: 250px;
+    margin-inline: auto;
+}
+
+.client-card p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: var(--text-light);
+
+    font-style: italic;
+}
+
+.client-card h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.client-card h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
 
 
 
@@ -321,6 +380,8 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+
 }
 
 /* Tambahan sedikit */
@@ -334,6 +395,24 @@ body {
     .product-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* client card */
+    .client-card {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Perbaikan Tambahan */
+@media (width < 768px) {
+    .client-card {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 750px;
+        margin-inline: auto;
+        text-align: center;
     }
 }
 
@@ -440,6 +519,9 @@ body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
+    /* Section Client */
+
 
 
 

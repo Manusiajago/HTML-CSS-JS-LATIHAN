@@ -57,3 +57,45 @@ body {
     font-size: 2rem;
     font-weight: bold;
 }
+
+.hero {
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 20px solid #ddd;
+}
+
+.hero-text {
+    margin-top: 2rem;
+    max-width: 700px;
+
+
+}
+
+.hero-text h2 {
+    margin-bottom: 1rem;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.hero-text p {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+
+    color: #000000;
+}

@@ -99,3 +99,31 @@ body {
 
     color: #000000;
 }
+
+.project {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project h2 {
+    text-align: center;
+}
+
+.project-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 2rem;
+}
+
+.project-card {
+    text-align: center;
+    background-color: #ddd;
+    padding: 1rem;
+}
+
+.project-card img {
+    width: 100%;
+}

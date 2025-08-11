@@ -18,6 +18,9 @@
 
     <!-- Remix Icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -97,6 +100,88 @@
         </div>
     </section>
 
+    <!-- Section Blog -->
+    <section id="blog" class="blog">
+        <h2>Blog Preview</h2>
+
+        <!-- Swiper container -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <article class="blog-card">
+                        <img src="assets/project.png" alt="Blog 1">
+                        <div class="blog-text">
+                            <h3>Blog Post 1</h3>
+                            <p>Short excerpt from blog post 1.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="blog-card">
+                        <img src="assets/project.png" alt="Blog 2">
+                        <div class="blog-text">
+                            <h3>Blog Post 2</h3>
+                            <p>Short excerpt from blog post 2.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="blog-card">
+                        <img src="assets/project.png" alt="Blog 3">
+                        <div class="blog-text">
+                            <h3>Blog Post 3</h3>
+                            <p>Short excerpt from blog post 3.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Optional: pagination & navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- Section Form -->
+    <section class="container-contact" id="contact">
+        <h2>Contact Me</h2>
+        <form id="form-contact" action="" method="post">
+            <fieldset>
+                <label for="name">Nama: </label>
+                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <label for="name">Email: </label>
+                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <label for="name">No Telpon: </label>
+                <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <label for="name">Kirim pesan: </label>
+                <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="name">Nama: </label>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+
+
+    <!-- Footer  -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="images/github.png" alt="GitHub"></a>
+        </div>
+        <p>&copy; 2025 John Doe</p>
+    </footer>
+
 
 
 
@@ -110,6 +195,7 @@
 
 
     <!-- Script js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 

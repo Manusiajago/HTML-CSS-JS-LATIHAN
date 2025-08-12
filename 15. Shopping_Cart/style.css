@@ -127,12 +127,19 @@ header {
     z-index: 100;
     overflow: auto;
 
+    transition: 0.5s;
     background-color: #fff;
     box-shadow: -13px 2px 10px -1px rgba(178, 161, 161, 0.75);
     -webkit-box-shadow: -13px 2px 10px -1px rgba(178, 161, 161, 0.75);
     -moz-box-shadow: -13px 2px 10px -1px rgba(178, 161, 161, 0.75);
 
 }
+
+.cart.active {
+    right: 0;
+}
+
+
 
 .cart .cart-title {
     text-align: center;

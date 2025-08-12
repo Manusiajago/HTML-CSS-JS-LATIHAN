@@ -57,3 +57,201 @@ header {
 .shop {
     padding: 100px 9% 30px;
 }
+
+.section-title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; */
+
+}
+
+.product-box .img-box {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-box .img-box img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.product-box .img-box img:hover {
+    transform: scale(1.1);
+}
+
+.product-box .product-title {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.product-box .price-and-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-box .price-and-cart .price {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.product-box .price-and-cart .add-cart {
+    padding: 10px;
+    font-size: 20px;
+
+    background-color: #e35f26;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    /* right: 0; */
+    right: -100%;
+    width: 360px;
+    height: 100%;
+    padding: 65px 20px 40px;
+    z-index: 100;
+    overflow: auto;
+
+    background-color: #fff;
+    box-shadow: -13px 2px 10px -1px rgba(178, 161, 161, 0.75);
+    -webkit-box-shadow: -13px 2px 10px -1px rgba(178, 161, 161, 0.75);
+    -moz-box-shadow: -13px 2px 10px -1px rgba(178, 161, 161, 0.75);
+
+}
+
+.cart .cart-title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.cart .cart-content .cart-box {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cart .cart-content .cart-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.cart .cart-content .cart-detail {
+    display: grid;
+    gap: 8px;
+    margin-right: auto;
+}
+
+.cart .cart-content .cart-box .cart-detail .cart-product-title {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.cart .cart-content .cart-box .cart-detail .cart-price {
+    font-weight: 500;
+}
+
+.cart .cart-content .cart-box .cart-detail .cart-quantity {
+    display: flex;
+    width: 100px;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+
+.cart .cart-content .cart-box .cart-detail .cart-quantity button {
+    background: transparent;
+    width: 30px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cart .cart-content .cart-box .cart-detail .cart-quantity #decrement {
+    color: #999;
+}
+
+.cart .cart-content .cart-box .cart-detail .cart-quantity .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    cursor: default;
+}
+
+.cart .cart-content .cart-box .ri-delete-bin-5-line.cart-remove {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.cart .total {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px solid #333;
+    margin-top: 1rem;
+    font-size: 18px;
+}
+
+.cart .total .total-price {
+    margin-left: 1rem;
+    font-weight: 600;
+}
+
+.cart .btn-buy {
+    display: block;
+    padding: 10px 30px;
+    background-color: #e35f26;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff;
+    margin: 10px auto 0;
+    cursor: pointer;
+}
+
+.cart #cart-close {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sementara  */
+@media (width > 1200px) {
+    .product-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

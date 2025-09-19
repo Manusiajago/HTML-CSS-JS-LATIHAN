@@ -75,13 +75,13 @@ function validateForm() {
         showError(document.getElementById('username'), 'Username harus di isi');
         isValid = false;
     } else if (username.length < 3) {
-        showError(document.getElementById('username', 'Username minimal 3 karakter'));
+        showError(document.getElementById('username'), 'Username minimal 3 karakter');
         isValid = false;
     }
 
     // lalu validasi nama lengkap
     if (!fullname) {
-        showError(document.getElementById('fullname'), "Nama lengkao harus di isi bro");
+        showError(document.getElementById('fullname'), "Nama lengkap harus di isi bro");
         isValid = false;
     } else if (fullname.length < 2) {
         showError(document.getElementById('fullname'), "Nama lengkap minimal 2 karakter")
@@ -101,7 +101,7 @@ function validateForm() {
         showError(document.getElementById('password'), "Password harus di isi");
         isValid = false;
     } else if (password !== confirmPassword) {
-        showError(document.getElementById('password', "Password tidak cocok"));
+        showError(document.getElementById('password'), "Password tidak cocok");
         isValid = false
     }
 

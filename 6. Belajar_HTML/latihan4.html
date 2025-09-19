@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 4</title>
+
+    <!-- External CSS -->
+    <style>
+        .title-h1 {
+            background-color: black;
+            text-align: center;
+            padding: 20px;
+            color: white;
+
+            border: 10px solid blue;
+        }
+
+        /* container DIV */
+        .container {
+            width: 400px;
+            padding: 20px;
+            text-align: center;
+
+            border: 3px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .container-group {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* menggunakan grid */
+
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 8px;
+
+
+
+        }
+
+        .div1 {
+            grid-row: span 2 / span 2;
+
+            background-color: yellow;
+            padding: 20px;
+            border: 3px solid black;
+        }
+
+        .div2 {
+            grid-row: span 2 / span 2;
+            background-color: hotpink;
+            padding: 20px;
+            border: 3px solid black;
+        }
+
+        .div3 {
+            grid-row: span 4 / span 4;
+
+            background-color: lightblue;
+            padding: 20px;
+            border: 3px solid black;
+        }
+
+        .div4 {
+            grid-row: span 2 / span 2;
+            grid-row-start: 3;
+
+            background-color: lightgreen;
+            padding: 20px;
+            border: 3px solid black;
+        }
+
+        .div5 {
+            grid-row: span 2 / span 2;
+            grid-row-start: 3;
+
+            background-color: orange;
+            padding: 20px;
+            border: 3px solid black;
+        }
+
+        .div6 {
+            grid-column: span 3 / span 3;
+            grid-row-start: 5;
+
+            background-color: purple;
+            padding: 20px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="title-h1">HALO SELAMAT DATANG DI PERTEMUAN 4 BELAJAR HTML</h1>
+    <hr>
+
+    <h2>1. DIV / Element pembungkus</h2>
+
+    <h3>Contoh 1: </h3>
+    <p>Contoh penerapan elemen DIV: </p>
+    halo ini aku Egal <div style="background-color: pink;">ini saya div</div> saya juga adel
+
+    <h3>Contoh 2: </h3>
+
+    <div class="container-group">
+        <div style="background-color: tomato;" class="container">
+            <h1>Jakarta</h1>
+            <p>Jakarta adalah Ibukota Indonesia yang sangat padat penduduk. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Corporis, tempore dolore fugit magni laboriosam nulla aliquam excepturi cupiditate
+                dicta
+                nobis
+                placeat doloremque ea consequatur explicabo deleniti porro. Adipisci porro et aliquid iste molestias
+                placeat
+                hic! Cum velit ea magni aut consequuntur culpa odit quidem alias natus debitis quas ipsa magnam
+                pariatur,
+                minus, unde.
+            </p>
+        </div>
+        <div style="background-color: tomato;" class="container">
+            <h1>Bandung</h1>
+            <p>Jakarta adalah Ibukota Indonesia yang sangat padat penduduk. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Corporis, tempore dolore fugit magni laboriosam nulla aliquam excepturi cupiditate
+                dicta
+                nobis
+                placeat doloremque ea consequatur explicabo deleniti porro. Adipisci porro et aliquid iste molestias
+                placeat
+                hic! Cum velit ea magni aut consequuntur culpa odit quidem alias natus debitis quas ipsa magnam
+                pariatur,
+                minus, unde.
+            </p>
+        </div>
+        <div style="background-color: tomato;" class="container">
+            <h1>Surabaya</h1>
+            <p>Jakarta adalah Ibukota Indonesia yang sangat padat penduduk. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Corporis, tempore dolore fugit magni laboriosam nulla aliquam excepturi cupiditate
+                dicta
+                nobis
+                placeat doloremque ea consequatur explicabo deleniti porro. Adipisci porro et aliquid iste molestias
+                placeat
+                hic! Cum velit ea magni aut consequuntur culpa odit quidem alias natus debitis quas ipsa magnam
+                pariatur,
+                minus, unde.
+            </p>
+        </div>
+        <div style="background-color: tomato;" class="container">
+            <h1>Medan</h1>
+            <p>Jakarta adalah Ibukota Indonesia yang sangat padat penduduk. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Corporis, tempore dolore fugit magni laboriosam nulla aliquam excepturi cupiditate
+                dicta
+                nobis
+                placeat doloremque ea consequatur explicabo deleniti porro. Adipisci porro et aliquid iste molestias
+                placeat
+                hic! Cum velit ea magni aut consequuntur culpa odit quidem alias natus debitis quas ipsa magnam
+                pariatur,
+                minus, unde.
+            </p>
+        </div>
+        <div style="background-color: tomato;" class="container">
+            <h1>Medan</h1>
+            <p>Jakarta adalah Ibukota Indonesia yang sangat padat penduduk. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Corporis, tempore dolore fugit magni laboriosam nulla aliquam excepturi cupiditate
+                dicta
+                nobis
+                placeat doloremque ea consequatur explicabo deleniti porro. Adipisci porro et aliquid iste molestias
+                placeat
+                hic! Cum velit ea magni aut consequuntur culpa odit quidem alias natus debitis quas ipsa magnam
+                pariatur,
+                minus, unde.
+            </p>
+        </div>
+        <div style="background-color: tomato;" class="container">
+            <h1>Medan</h1>
+            <p>Jakarta adalah Ibukota Indonesia yang sangat padat penduduk. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Corporis, tempore dolore fugit magni laboriosam nulla aliquam excepturi cupiditate
+                dicta
+                nobis
+                placeat doloremque ea consequatur explicabo deleniti porro. Adipisci porro et aliquid iste molestias
+                placeat
+                hic! Cum velit ea magni aut consequuntur culpa odit quidem alias natus debitis quas ipsa magnam
+                pariatur,
+                minus, unde.
+            </p>
+        </div>
+    </div>
+
+    <h2>2. DIV dengan menggunakan GRID</h2>
+    <h3>Contoh 1: </h3>
+    <p>Contoh penerapan elemen DIV dengan GRID: </p>
+
+    <div class="container-parent">
+
+    </div>
+    <div class="parent">
+        <div class="div1">
+            <h1>Jakarta</h1>
+            <p>Jakarta adalah Ibukota Indonesia yang sangat padat penduduk. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Corporis, tempore dolore fugit magni laboriosam nulla aliquam excepturi cupiditate
+                dicta
+                nobis
+                placeat doloremque ea consequatur explicabo deleniti porro. Adipisci porro et aliquid iste molestias
+                placeat
+                hic! Cum velit ea magni aut consequuntur culpa odit quidem alias natus debitis quas ipsa magnam
+                pariatur,
+                minus, unde.
+            </p>
+        </div>
+        <div class="div2">
+            <h1>Jakarta</h1>
+            <p>Jakarta adalah Ibukota Indonesia yang sangat padat penduduk. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Corporis, tempore dolore fugit magni laboriosam nulla aliquam excepturi cupiditate
+                dicta
+                nobis
+                placeat doloremque ea consequatur explicabo deleniti porro. Adipisci porro et aliquid iste molestias
+                placeat
+                hic! Cum velit ea magni aut consequuntur culpa odit quidem alias natus debitis quas ipsa magnam
+                pariatur,
+                minus, unde.
+            </p>
+        </div>
+        <div class="div3">
+            <h1>Jakarta</h1>
+            <p>Jakarta adalah Ibukota Indonesia yang sangat padat penduduk. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Corporis, tempore dolore fugit magni laboriosam nulla aliquam excepturi cupiditate
+                dicta
+                nobis
+                placeat doloremque ea consequatur explicabo deleniti porro. Adipisci porro et aliquid iste molestias
+                placeat
+                hic! Cum velit ea magni aut consequuntur culpa odit quidem alias natus debitis quas ipsa magnam
+                pariatur,
+                minus, unde.
+            </p>
+        </div>
+        <div class="div4">
+            <h1>Jakarta</h1>
+            <p>Jakarta adalah Ibukota Indonesia yang sangat padat penduduk. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Corporis, tempore dolore fugit magni laboriosam nulla aliquam excepturi cupiditate
+                dicta
+                nobis
+                placeat doloremque ea consequatur explicabo deleniti porro. Adipisci porro et aliquid iste molestias
+                placeat
+                hic! Cum velit ea magni aut consequuntur culpa odit quidem alias natus debitis quas ipsa magnam
+                pariatur,
+                minus, unde.
+            </p>
+        </div>
+        <div class="div5">
+            <h1>Jakarta</h1>
+            <p>Jakarta adalah Ibukota Indonesia yang sangat padat penduduk. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Corporis, tempore dolore fugit magni laboriosam nulla aliquam excepturi cupiditate
+                dicta
+                nobis
+                placeat doloremque ea consequatur explicabo deleniti porro. Adipisci porro et aliquid iste molestias
+                placeat
+                hic! Cum velit ea magni aut consequuntur culpa odit quidem alias natus debitis quas ipsa magnam
+                pariatur,
+                minus, unde.
+            </p>
+        </div>
+        <div class="div6">
+            <h1>Jakarta</h1>
+            <p>Jakarta adalah Ibukota Indonesia yang sangat padat penduduk. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Corporis, tempore dolore fugit magni laboriosam nulla aliquam excepturi cupiditate
+                dicta
+                nobis
+                placeat doloremque ea consequatur explicabo deleniti porro. Adipisci porro et aliquid iste molestias
+                placeat
+                hic! Cum velit ea magni aut consequuntur culpa odit quidem alias natus debitis quas ipsa magnam
+                pariatur,
+                minus, unde.
+            </p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BELAJAR CSS PERTEMUAN 1</title>
+
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <style>
+        * {
+
+            box-sizing: border-box;
+        }
+
+        .title-1 {
+            text-align: left;
+        }
+
+        .title-2 {
+            text-align: center;
+        }
+
+        .title-3 {
+            text-align: right;
+        }
+
+        .title-4 {
+            text-align: justify;
+        }
+
+        .paragraf-1 {
+            text-indent: 100px;
+        }
+
+        .link-2 {
+            text-decoration: none;
+
+        }
+
+        .paragraf-3 {
+            text-transform: uppercase;
+        }
+
+        .title-h2-1 {
+            background-color: red;
+            padding: 10px;
+            border: 3px solid black;
+            color: white;
+
+            text-decoration: line-through;
+        }
+
+        .title-h2-2 {
+            background-color: red;
+            padding: 20px;
+            border: 3px solid black;
+            color: white;
+        }
+
+        body {
+            background-color: lightblue;
+            background-image: url(assets/ChatGPT\ Image\ 22\ Jul\ 2025\,\ 14.54.54.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        .container-div {
+            background-color: purple;
+            opacity: 0.5;
+
+
+
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+
+            margin: 0 auto;
+
+        }
+
+        .p-div {
+            display: none;
+
+        }
+
+        .hover-div:hover p {
+            display: block;
+        }
+
+        .a-1 {
+            display: block;
+        }
+
+        .inline-block-box {
+            width: 200px;
+            height: 100px;
+            background-color: blueviolet;
+            text-align: center;
+
+
+            display: inline-block;
+            margin: 10px;
+
+        }
+
+        .dimensi-box {
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            background-color: tomato;
+
+            overflow: auto;
+        }
+
+        .container {
+            width: 80%;
+            height: auto;
+            background-color: greenyellow;
+            padding: 20px;
+
+            border: 3px solid white;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: purple;
+            border: 2px solid white;
+
+            margin: 50px auto 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">SELAMAT DATANG DI PERTEMUAN 1 PADA MATERI CSS</h1>
+    <hr>
+
+    <h1 class="name-title">Halo nama saya Egal Assegaf</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae ullam nemo praesentium, porro eos quasi dolorem
+        tempore, quas dignissimos corporis repellat ipsam ipsum adipisci placeat labore aliquam aliquid, quo ea
+        perferendis magni. Harum minus laboriosam repellat in earum id sit veniam illum, nemo iure quibusdam, similique,
+        sint temporibus quod? Esse.
+    </p>
+
+    <h2 class="title-h2-1">Text Formatting pada CSS</h2>
+
+    <h1 class="title-1">Hello world test 1</h1>
+    <h1 class="title-2">Hello world test 2</h1>
+    <h1 class="title-3">Hello world test 3</h1>
+    <h1 class="title-4">Hello world test 4</h1>
+
+    <p class="paragraf-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic facere itaque natus libero
+        assumenda exercitationem
+        nobis rerum est voluptates. Doloribus.
+    </p>
+    <a href="#" class="link-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda cumque amet
+        consequuntur nam omnis
+        quidem nostrum libero quasi blanditiis animi!
+    </a>
+    <p class="paragraf-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quas quis fugiat
+        provident consequuntur
+        nostrum vitae in recusandae a voluptatibus inventore, mollitia totam accusantium hic tempora voluptatem nisi
+        dolores blanditiis nemo. Delectus, repellendus deserunt corporis, quasi eligendi quae possimus mollitia tempore
+        accusamus vitae iusto aperiam optio corrupti veniam atque debitis?
+    </p>
+    <p class="paragraf-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora reiciendis, voluptatem
+        consequuntur eaque quos
+        libero velit sapiente, repellendus minima, deleniti quasi pariatur. Optio maiores quibusdam nihil quis ut
+        aspernatur consequuntur, quidem repellendus expedita ab molestias molestiae repudiandae voluptas quo dolore
+        placeat eaque laborum necessitatibus ratione. Odio officia qui reiciendis sint.
+    </p>
+    <p class="paragraf-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque molestiae non officiis
+        cupiditate aspernatur ut
+        quos accusantium numquam id, unde nesciunt autem itaque adipisci tenetur aut, reprehenderit iusto temporibus
+        modi.
+    </p>
+
+    <h2 class="title-h2-2">Background pada CSS</h2>
+    <ol>
+        <li>Background-color</li>
+        <li>Background-image</li>
+        <li>background-repeat</li>
+    </ol>
+
+    <p>Contoh menerapkan background-color: </p>
+    <div class="container-div">Hello world</div>
+
+    <div class="hover-div">Coba klik <b style="color: red;">Hover</b> sini wkwk!
+        <p style="color: purple; background-color: yellow; padding: 20px;" class="p-div">HAHAHAHHA HALO BRO</p>
+    </div>
+
+    <h2>Display pada CSS</h2>
+    <p>Inline display: </p>
+
+    <ol>
+        <li>Hello world</li>
+        <li>Helo wolrd</li>
+        <li>Helo World</li>
+    </ol>
+
+    <p>Block display</p>
+
+    <a class="a-1">Hello world</a>
+    <a class="a-1">Hello world</a>
+    <a class="a-1">Hello world</a>
+
+
+    <h2>Contoh Inline-block: </h2>
+    <p>Display inline-block, mirip inline tetapi perilaku nya kita bisa mengubah tinggi,lebar,dll</p>
+
+    <div class="inline-block-box">Box 1</div>
+    <div class="inline-block-box">Box 2</div>
+    <div class="inline-block-box">Box 3</div>
+    <div class="inline-block-box">Box 4</div>
+
+    <h2>Dimensi & overflow</h2>
+    <p>noted: jika dimensi lebih besar dari isi konten nya gunaakan overflow: hidden,scroll, visible, auto</p>
+    <div class="dimensi-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem explicabo fugiat veniam
+        eligendi architecto at magnam quam, veritatis, atque molestias deleniti laborum similique facere eum quo ipsa
+        nisi rerum ipsam. Sunt, nisi consequatur, dicta quia doloremque laborum nam modi nihil, beatae esse eius quis
+        quisquam expedita accusantium aperiam inventore minima.
+    </div>
+
+    <h2>Konsep box model</h2>
+    <p>box model meliputi</p>
+    <ul>
+        <li>Margin</li>
+        <li>Padding</li>
+        <li>Border</li>
+        <li>Content</li>
+    </ul>
+
+    <div class="container">
+        <div class="box">box 1</div>
+
+    </div>
+
+
+
+</body>
+
+</html>

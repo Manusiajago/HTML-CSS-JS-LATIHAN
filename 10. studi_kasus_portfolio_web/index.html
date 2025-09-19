@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktek membuat portfolio || HTML & CSS</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- membuat header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Tri Syhanda Ade Lia</h1>
+
+            <!-- Navigasi -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Project</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <img src="Adel_profile.jpg" alt="hero_profile" class="profile_photo">
+                <h2 class="hero-title">Halo, Nama saya Tri Syhanda Ade Lia</h2>
+                <p class="hero-description">Content Creator & Social Media Specialist yang bersemangat dalam menciptakan
+                    pengalaman digital yang menarik, interaktif, dan fungsional.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About me</h2>
+
+            <p class="about-text">Saya adalah seorang web developer dengan pengalaman lebih dari 3 tahun dalam
+                mengembangkan aplikasi web
+                modern.
+                Saya memiliki keahlian dalam HTML, CSS, JavaScript, dan berbagai framework modern. Saya senang belajar
+                teknologi
+                baru dan selalu berusaha memberikan solusi terbaik untuk setiap project yang saya kerjakan.
+            </p>
+            <p class="about-text">
+                Ketika tidak sedang coding, saya suka membaca buku teknologi, bermain game, dan mengeksplorasi
+                tempat-tempat baru.
+                Saya percaya bahwa pengalaman di luar dunia programming dapat memberikan perspektif yang lebih luas
+                dalam
+                menyelesaikan masalah teknis.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projetcs">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+
+            <div class="projects-grid">
+                <div class="projects-card">
+                    <img src="Project_1.jpg" alt="projects_1_photo" class="project-image">
+                    <h3 class="project-title">Membuat Majalah</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quas
+                        nulla ex iure repellat
+                        inventore, maiores, neque a itaque recusandae facere alias porro. Itaque sit consectetur
+                        maxime
+                        corrupti quisquam ipsum ea ratione, qui sint. Harum facilis magni corrupti fugit. Aspernatur
+                        adipisci consequuntur, omnis doloremque optio ex obcaecati saepe quae exercitationem!
+                    </p>
+                </div>
+                <div class="projects-card">
+                    <img src="Project_2.jpg" alt="projects_2_photo" class="project-image">
+                    <h3 class="project-title">Membuat Artikel</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quas
+                        nulla ex iure repellat
+                        inventore, maiores, neque a itaque recusandae facere alias porro. Itaque sit consectetur
+                        maxime
+                        corrupti quisquam ipsum ea ratione, qui sint. Harum facilis magni corrupti fugit. Aspernatur
+                        adipisci consequuntur, omnis doloremque optio ex obcaecati saepe quae exercitationem!
+                    </p>
+                </div>
+                <div class="projects-card">
+                    <img src="Project_3.jpg" alt="projects_3_photo" class="project-image">
+                    <h3 class="project-title">Membuat Artikel</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quas
+                        nulla ex iure repellat
+                        inventore, maiores, neque a itaque recusandae facere alias porro. Itaque sit consectetur
+                        maxime
+                        corrupti quisquam ipsum ea ratione, qui sint. Harum facilis magni corrupti fugit. Aspernatur
+                        adipisci consequuntur, omnis doloremque optio ex obcaecati saepe quae exercitationem!
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Section contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nama">Nama: </label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" rows="5" required placeholder="Masukkan pesan"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Kirim pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Tri Syhanda Ade Lia. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

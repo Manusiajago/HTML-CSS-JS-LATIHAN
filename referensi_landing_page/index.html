@@ -1,0 +1,135 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="toggle-container">
+                <button id="dark-mode-toggle">Toggle Dark Mode</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <img src="assets/Foto_Egal_Assegaf_page-0001.jpg" alt="Profile Photo" class="profile-photo">
+            <div class="hero-text">
+                <h1>Hello, I'm John Doe</h1>
+                <p>A passionate web developer with experience in HTML, CSS, and JavaScript. I create responsive and
+                    interactive websites.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="project-card">
+                <img src="images/project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Description of project 3.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project4.jpg" alt="Project 4">
+                <h3>Project 4</h3>
+                <p>Description of project 4.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project5.jpg" alt="Project 5">
+                <h3>Project 5</h3>
+                <p>Description of project 5.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project6.jpg" alt="Project 6">
+                <h3>Project 6</h3>
+                <p>Description of project 6.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2>Blog Preview</h2>
+        <div class="blog-cards">
+            <article class="blog-card">
+                <img src="images/blog1.jpg" alt="Blog 1">
+                <div class="blog-text">
+                    <h3>Blog Post 1</h3>
+                    <p>Short excerpt from blog post 1.</p>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="images/blog2.jpg" alt="Blog 2">
+                <div class="blog-text">
+                    <h3>Blog Post 2</h3>
+                    <p>Short excerpt from blog post 2.</p>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="images/blog3.jpg" alt="Blog 3">
+                <div class="blog-text">
+                    <h3>Blog Post 3</h3>
+                    <p>Short excerpt from blog post 3.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="images/github.png" alt="GitHub"></a>
+        </div>
+        <p>&copy; 2025 John Doe</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

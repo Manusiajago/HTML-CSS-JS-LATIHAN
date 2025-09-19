@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 6 || HTML Form</title>
+
+    <style>
+        .title {
+            text-align: center;
+            background-color: blue;
+            border: 3px solid black;
+            color: white;
+            padding: 20px;
+        }
+
+        .container-form {
+            width: 60%;
+            height: auto;
+            margin: auto;
+            background-color: lightblue;
+            border-radius: 20px;
+            border: 3px solid black;
+
+            padding: 20px;
+
+        }
+
+        .container-form h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: lightgray;
+            border-radius: 10px;
+            border: 2px solid black;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .container-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            width: 100%;
+        }
+
+        .container-group label {
+            font-weight: bold;
+        }
+
+        .container-group input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: auto;
+        }
+
+        .container-group.btn {
+            display: inline;
+        }
+
+        .container-group button {
+            width: 30%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+
+        .container-group input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+
+        }
+
+        .container-group input[type="checkbox"] {
+            width: auto;
+
+        }
+
+        .container-group fieldset legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">SELAMAT DATANG DI PERTEMUAN 6 BELAJAR HTML!</h1>
+    <hr>
+
+    <h2>1. HTML Form</h2>
+    <p>Form HTML adalah elemen yang digunakan untuk mengumpulkan data dari pengguna. Form ini dapat berisi berbagai
+        elemen input seperti teks, radio button, checkbox, dropdown, dan tombol submit.
+    </p>
+    <h3>Masukkan FORM pada HTML meliputi: </h3>
+    <ol>
+        <li>Text field</li>
+        <li>Radio button</li>
+        <li>Checkbox</li>
+        <li>Submit</li>
+        <li>button</li>
+    </ol>
+
+    <h3>Form dengan textfield: </h3>
+    <div class="container-form">
+        <h1>Formulir Pendaftaran</h1>
+        <form>
+            <div class="container-group">
+                <label for="name">Nama lengkap: </label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap anda" required>
+
+                <label for="jurusan">Masukkan Jurusan anda: </label>
+                <input type="text" id="jurusan" name="jurusan" placeholder="Masukkan jurusan anda yang sesuai" required>
+
+                <fieldset>
+                    <legend>Jenis Kelamin:</legend>
+                    <label><input type="radio" name="jenisKel" value="laki-laki" required> Laki-laki</label>
+                    <label><input type="radio" name="jenisKel" value="perempuan" required> Perempuan</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Serifikat pendukung:</legend>
+                    <label><input type="checkbox" name="w3school" value="w3school" required> w3school</label>
+                    <label><input type="checkbox" name="toefl" value="toefl" required> Toefl</label>
+                    <label><input type="checkbox" name="HackerRank" value="HackerRank" required> HackerRank</label>
+                </fieldset>
+
+                <!-- Menggunakan select -->
+                <label for="kota">Pilih Kota Asal: </label>
+                <select id="kota" name="kota" required>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="bandung">Bandung</option>
+                    <option value="surabaya" selected>Surabaya</option>
+                    <option value="yogyakarta">Yogyakarta</option>
+                    <option value="medan">Medan</option>
+                </select>
+
+                <!-- Membuat textarea -->
+                <label for="alamat">Alamat: </label>
+                <textarea id="alamat" name="alamat" rows="4" cols="50" placeholder="Masukkan alamat lengkap anda"
+                    required></textarea>
+            </div>
+
+            <div class="container-group btn">
+                <button type="submit">Kirim</button>
+                <button type="reset">Batal</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML ke 5</title>
+
+    <style>
+        .title {
+            text-align: center;
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            border: 3px solid black;
+        }
+
+        .all-city {
+            margin: 0;
+            padding: 5px;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container-fluid {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .city {
+            width: 30%;
+            background-color: yellow;
+            border: 3px solid black;
+
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">SELAMAT DATANG DI PERTEMUAN 5 BELAJAR HTML!</h1>
+    <hr>
+
+    <h2>1. Semantic HTML</h2>
+    <p>Semantic HTML adalah penggunaan elemen HTML yang memiliki makna atau arti tertentu, sehingga dapat membantu mesin
+        pencari dan pembaca layar untuk memahami struktur dan konten halaman web dengan lebih baik.
+    </p>
+    <p>Contoh nya adalah section, urutan penggunaan isi section yg benar: </p>
+    <ol>
+        <li>Bab</li>
+        <li>Pendahuluan</li>
+        <li>Berita</li>
+        <li>Informasi</li>
+    </ol>
+
+    <h3>Contoh menggunakan section: </h3>
+    <section>
+        <h2>Judul Section</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente cumque quae fugiat. Neque unde rerum sit
+            mollitia. Autem vel inventore placeat ducimus incidunt minima voluptatem, molestiae repellat quos
+            dignissimos sint corporis fugiat iure dolor obcaecati quibusdam quo, corrupti illum voluptatibus
+            exercitationem nam, nesciunt explicabo excepturi at! Distinctio alias nostrum sint.</p>
+    </section>
+
+    <section>
+        <h2>Judul Section</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fugiat facere impedit et exercitationem
+            fuga quas quod atque ratione rerum a culpa explicabo magni molestiae itaque vero obcaecati, adipisci quam
+            eligendi, dignissimos dolorum voluptatum asperiores assumenda. Aspernatur deserunt distinctio excepturi,
+            assumenda voluptatem eum, quis ab laborum delectus sint vel maiores.</p>
+    </section>
+
+    <h2>2. ARTICLE</h2>
+    <p>Elemen <code>article</code> digunakan untuk menandai konten yang dapat berdiri sendiri, seperti artikel berita,
+        posting blog, atau komentar. Elemen ini membantu dalam mengorganisir konten yang memiliki makna independen.
+    </p>
+
+    <h3>Contoh penggunaan elemen article: </h3>
+    <article>
+        <h2>Judul artikel</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem ipsam velit laborum in dolores atque optio
+            eaque, vitae id dolorem modi obcaecati natus molestias eveniet numquam dolore beatae temporibus accusamus
+            doloribus fuga voluptatum! Omnis, autem sunt officia quibusdam ut voluptates rerum accusantium fugit placeat
+            officiis delectus ab esse error similique ipsam? Facilis, ex suscipit harum voluptatem ipsam deserunt qui
+            similique temporibus impedit, minus delectus. Modi enim quae velit dolorum cupiditate dolores animi
+            obcaecati, rerum explicabo. Soluta quae corporis, architecto voluptates porro facilis labore suscipit
+            voluptatem? Corrupti soluta, necessitatibus est quaerat pariatur accusamus id iure? Facere esse ipsum
+            praesentium unde nesciunt.</p>
+    </article>
+
+    <h3>Contoh 2: </h3>
+    <article class="all-city">
+        <h2>Daftar kota terpadat di Indonesia</h2>
+        <div class="container-fluid">
+            <article class="city">
+                <h3>JAKARTA</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illo minus tempore et provident beatae
+                    suscipit repudiandae ratione, eos molestiae reiciendis doloribus enim alias quae repellat. Illum
+                    ratione
+                    omnis reprehenderit quibusdam incidunt consectetur repellat dolor quae eum non tempora rerum,
+                    quaerat
+                    nostrum, maxime culpa saepe voluptate quam aperiam veritatis molestias.</p>
+            </article>
+            <article class="city">
+                <h3>JAKARTA</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illo minus tempore et provident beatae
+                    suscipit repudiandae ratione, eos molestiae reiciendis doloribus enim alias quae repellat. Illum
+                    ratione
+                    omnis reprehenderit quibusdam incidunt consectetur repellat dolor quae eum non tempora rerum,
+                    quaerat
+                    nostrum, maxime culpa saepe voluptate quam aperiam veritatis molestias.</p>
+            </article>
+            <article class="city">
+                <h3>JAKARTA</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illo minus tempore et provident beatae
+                    suscipit repudiandae ratione, eos molestiae reiciendis doloribus enim alias quae repellat. Illum
+                    ratione
+                    omnis reprehenderit quibusdam incidunt consectetur repellat dolor quae eum non tempora rerum,
+                    quaerat
+                    nostrum, maxime culpa saepe voluptate quam aperiam veritatis molestias.</p>
+            </article>
+            <article class="city">
+                <h3>JAKARTA</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illo minus tempore et provident beatae
+                    suscipit repudiandae ratione, eos molestiae reiciendis doloribus enim alias quae repellat. Illum
+                    ratione
+                    omnis reprehenderit quibusdam incidunt consectetur repellat dolor quae eum non tempora rerum,
+                    quaerat
+                    nostrum, maxime culpa saepe voluptate quam aperiam veritatis molestias.</p>
+            </article>
+        </div>
+
+    </article>
+
+    <h2>3. Header</h2>
+    <p>Contoh penggunaan <b>Header</b> didalam article: </p>
+    <article>
+        <header>
+            <h3>Judul artikel: lorem </h3>
+            <h3>Penulis:John doe </h3>
+        </header>
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam a esse nisi voluptate impedit nostrum veniam
+            tenetur velit deleniti! Nisi pariatur exercitationem quod maxime accusantium, aut commodi, fugiat fugit
+            saepe maiores minima et vel corporis facilis soluta animi vero quia temporibus ad cum voluptate quam enim.
+            Quisquam, eligendi voluptatibus adipisci delectus nihil magni placeat inventore. Assumenda rerum aliquam
+            velit blanditiis doloribus nam nemo. Sed distinctio dolor cupiditate quod, maxime at amet dolore itaque
+            asperiores, deleniti cumque pariatur sequi eaque obcaecati beatae saepe tenetur voluptas cum sunt optio.
+            Accusantium, alias cupiditate molestiae numquam aperiam nemo ipsum ut labore, vitae sequi quaerat delectus
+            minus ducimus ipsam omnis harum officiis molestias consectetur at! Autem dignissimos voluptas, minus
+            pariatur quas earum quia. Omnis nisi dolore quos animi distinctio facilis delectus voluptates sit et, facere
+            obcaecati voluptatum suscipit temporibus corrupti cum illo maiores assumenda, dolores molestias pariatur?
+            Sint, debitis harum reprehenderit dolorem quae nisi. Dolores?</P>
+    </article>
+
+    <h2>4. aside</h2>
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great
+        summer together with my family!</p>
+
+    <aside>
+        <h4>Epcot Center</h4>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions,
+            award-winning fireworks and seasonal special events.</p>
+    </aside>
+
+    <h2>5. Figure</h2>
+    <figure>
+        <img src="img/Screenshot (603).png" alt="testing" width="400" height="300">
+        <figcaption>
+            Gambar ini adalah contoh penggunaan elemen <code>figure</code> dan <code>figcaption</code>. Elemen
+        </figcaption>
+    </figure>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #000000;
+    color: white;
+}
+
+.search-input {
+    background-color: transparent;
+    padding: 8px 16px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 16px;
+    background-color: #eaeaea;
+}

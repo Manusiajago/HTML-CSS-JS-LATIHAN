@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-film"></i>
+                    <span>MovieFinder</span>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Cari film..." class="search-input">
+                    <button id="searchBtn" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button id="searchButton" class="action-btn primary">
+                    <i class="fas fa-search"></i>
+                    Search
+                </button>
+                <button id="favoriteButton" class="action-btn secondary">
+                    <i class="fas fa-heart"></i>
+                    Favorit
+                </button>
+                <button id="historyButton" class="action-btn tertiary">
+                    <i class="fas fa-history"></i>
+                    Riwayat Pencarian
+                </button>
+            </div>
+        </header>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="loading-spinner hidden">
+            <div class="spinner"></div>
+            <p>Mencari film...</p>
+        </div>
+
+        <!-- Error Message -->
+        <div id="errorMessage" class="error-message hidden">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p id="errorText">Terjadi kesalahan</p>
+        </div>
+
+        <!-- Movie List Section -->
+        <main class="main-content">
+            <div class="section-header">
+                <h2 id="sectionTitle">MOVIE LIST</h2>
+                <div class="view-toggle">
+                    <button id="gridView" class="view-btn active">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button id="listView" class="view-btn">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="movieContainer" class="movie-grid">
+                <!-- Welcome Message -->
+                <div id="welcomeMessage" class="welcome-message">
+                    <i class="fas fa-film"></i>
+                    <h3>Selamat Datang di MovieFinder</h3>
+                    <p>Cari film favorit Anda menggunakan kotak pencarian di atas</p>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div id="pagination" class="pagination hidden">
+                <button id="prevPage" class="page-btn">
+                    <i class="fas fa-chevron-left"></i>
+                    Previous
+                </button>
+                <span id="pageInfo" class="page-info">Page 1 of 1</span>
+                <button id="nextPage" class="page-btn">
+                    Next
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Movie Detail Modal -->
+    <div id="movieModal" class="modal hidden">
+        <div class="modal-content">
+            <button id="closeModal" class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalPoster" src="" alt="Movie Poster">
+                    <button id="favoriteToggle" class="favorite-btn">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="modal-info">
+                    <h2 id="modalTitle">TITLE MOVIE</h2>
+
+                    <div class="movie-badges">
+                        <span id="modalYear" class="badge">YEAR [CALL API]</span>
+                        <span id="modalDuration" class="badge">DURATION [CALL API]</span>
+                        <span id="modalRating" class="badge">RATING [CALL API]</span>
+                    </div>
+
+                    <div class="description-section">
+                        <h4>DESCRIPTION</h4>
+                        <p id="modalDescription">Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <h5>GENRE [CALL API]</h5>
+                            <p id="modalGenre">Action, Adventure</p>
+                        </div>
+                        <div class="detail-item">
+                            <h5>DIRECTOR [CALL API]</h5>
+                            <p id="modalDirector">John Doe</p>
+                        </div>
+                        <div class="detail-item">
+                            <h5>ACTORS [CALL API]</h5>
+                            <p id="modalActors">Actor 1, Actor 2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- History Modal -->
+    <div id="historyModal" class="modal hidden">
+        <div class="modal-content small">
+            <button id="closeHistoryModal" class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="modal-header">
+                <h3>Riwayat Pencarian</h3>
+            </div>
+
+            <div id="historyList" class="history-list">
+                <!-- History items will be populated here -->
+            </div>
+
+            <div class="modal-footer">
+                <button id="clearHistory" class="btn btn-danger">
+                    <i class="fas fa-trash"></i>
+                    Hapus Semua
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

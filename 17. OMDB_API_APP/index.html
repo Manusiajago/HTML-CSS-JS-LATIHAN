@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari & Filter Film</title>
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FONTS GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="app">
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <img src="images/icon_logo.png" alt="logo" class="logo-icon">
+                        <h1 class="logo-title">GasKuy<span>Movie</span></h1>
+                    </div>
+                    <nav class="nav">
+                        <button class="nav-btn active" data-tab="search">Cari</button>
+                        <button class="nav-btn" data-tab="favorites">Favorit</button>
+                        <button class="nav-btn" data-tab="history">Riwayat</button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END -->
+
+        <!-- MAIN CONTENT -->
+        <main class="main">
+            <div class="container">
+                <!-- Search Tab -->
+                <div class="tab-content active" id="search-tab">
+                    <!-- Search Section -->
+                    <section class="search-section">
+                        <div class="search-container">
+                            <div class="search-box">
+                                <input type="text" id="searchInput" placeholder="Cari film, seri, atau episode..."
+                                    class="search-input">
+                                <button id="searchBtn" class="search-btn">
+                                    <img src="images/search.png" alt="" class="search-icon">
+                                </button>
+                            </div>
+
+                            <!-- Filters -->
+                            <div class="filters">
+                                <div class="filter-group">
+                                    <label for="typeFilter">Tipe:</label>
+                                    <select id="typeFilter" class="filter-select">
+                                        <option value="">Semua</option>
+                                        <option value="movie">Film</option>
+                                        <option value="series">Serial</option>
+                                        <option value="episode">Episode</option>
+                                    </select>
+                                </div>
+
+                                <div class="filter-group">
+                                    <label for="yearFilter">Tahun:</label>
+                                    <input type="number" id="yearFilter" class="filter-input" placeholder="contoh: 2025"
+                                        min="1900" max="2024">
+                                </div>
+
+                                <button id="clearFilters" class="clear-btn">Hapus Filter</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Results Section -->
+                    <section class="results-section">
+                        <div class="results-header">
+                            <h2 id="resultsTitle">Film Populer</h2>
+                            <div class="results-count">
+                                <span id="resultsCount">0 hasil ditemukan</span>
+                            </div>
+                        </div>
+
+                        <!-- Loading Spinner -->
+                        <div class="loading" id="loading">
+                            <div class="spinner"></div>
+                            <p>Sedang mencari film...</p>
+                        </div>
+
+                        <!-- Error Message -->
+                        <div class="error" id="error">
+                            <div class="error-content">
+                                <img src="images/nothing.png" alt="" class="search-result">
+                                <h3>Oops! Terjadi kesalahan</h3>
+                                <p id="errorMessage">Silakan coba lagi nanti.</p>
+                                <button id="retryBtn" class="retry-btn">Coba Lagi</button>
+                            </div>
+                        </div>
+
+                        <!-- No Results -->
+                        <div class="no-results" id="noResults">
+                            <div class="no-results-content">
+                                <img src="images/nothing.png" alt="" class="search-result">
+                                <h3>Tidak ada film ditemukan</h3>
+                                <p>Coba ganti kata kunci atau filter pencarian</p>
+                            </div>
+                        </div>
+
+                        <!-- Movies Grid -->
+                        <div class="movies-grid" id="moviesGrid"></div>
+
+                        <!-- Pagination -->
+                        <div class="pagination" id="pagination">
+                            <button id="prevPage" class="page-btn" disabled>Sebelumnya</button>
+                            <div class="page-numbers" id="pageNumbers"></div>
+                            <button id="nextPage" class="page-btn">Berikutnya</button>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Favorites Tab -->
+                <div class="tab-content" id="favorites-tab">
+                    <div class="tab-header">
+                        <h2>Film Favorit Kamu</h2>
+                        <p>Film yang kamu simpan akan muncul di sini</p>
+                    </div>
+                    <div class="movies-grid" id="favoritesGrid"></div>
+                    <div class="empty-state" id="emptyFavorites">
+                        <!-- <span class="empty-icon">❤️</span> -->
+                        <h3>Belum ada favorit</h3>
+                        <p>Cari film lalu tambahkan ke favorit!</p>
+                    </div>
+                </div>
+
+                <!-- History Tab -->
+                <div class="tab-content" id="history-tab">
+                    <div class="tab-header">
+                        <h2>Riwayat Pencarian</h2>
+                        <div class="history-actions">
+                            <button id="clearHistory" class="clear-history-btn">Hapus Riwayat</button>
+                        </div>
+                    </div>
+                    <div class="history-list" id="historyList"></div>
+                    <div class="empty-state" id="emptyHistory">
+                        <h3>Belum ada riwayat</h3>
+                        <p>Pencarian terakhir kamu akan muncul di sini</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- MAIN CONTENT END -->
+
+        <!-- MOVIE DETAIL MODAL  -->
+        <div class="modal" id="movieModal">
+            <div class="modal-backdrop" id="modalBackdrop"></div>
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">×</button>
+                <div class="modal-body" id="modalBody"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

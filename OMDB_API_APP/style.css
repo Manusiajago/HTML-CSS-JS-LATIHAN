@@ -1,0 +1,155 @@
+*, html {
+    padding: 0.5rem;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(70, 65, 65);
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.title-logo {
+    font-size: 28px;
+    color: white;
+}
+
+span {
+    color: yellow;
+    padding: 0;
+}
+
+.search-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-btn {
+    background-color: yellow;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: rgb(253, 253, 206);
+}
+
+.container-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.favorite-btn {
+    background-color: indigo;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.history-btn {
+    background-color: yellow;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.main-content {
+    margin-top: 2rem;
+    width: 100%;
+    background-color: rgb(70, 65, 65);
+    border: 1px solid white;
+    min-height: 700px;
+    border-radius: 10px;
+}
+
+.sub-title-main {
+    text-align: center;
+    color: white;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+/* ====================== PARENT MOVIE CARD ===================== */
+.show-movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    /* jarak antar card */
+    padding: 20px;
+}
+
+/* ====================== PARENT MOVIE CARD ===================== */
+
+/*  ====================== CARD ================================ */
+.movie-card {
+    margin-top: 1.5rem;
+    width: 100%;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+.movie-poster img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-info {
+    padding: 15px;
+}
+
+.movie-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.movie-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+    height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-rating {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff9800;
+}
+
+.movie-rating i {
+    margin-right: 5px;
+}
+
+/*  ====================== CARD ================================ */

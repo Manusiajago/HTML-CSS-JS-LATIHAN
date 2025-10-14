@@ -17,14 +17,25 @@ body {
     --icon-bg-facebook: #3b5998;
     --icon-bg-google: #4285F4;
     --icon-bg-tiktok: #000000;
+
+    /* buttons */
+    --btn-bg-primary: rgb(238, 98, 38);
+    --btn-bg-hover: rgb(255, 57, 22);
+    --btn-txt-primary: #222222;
 }
 
 .card {
+    width: 300px;
+    height: auto;
     margin: 8px;
-    padding: 20px;
+    padding: 32px;
     border: 2px solid white;
     background-color: var(--bg-secondary);
     color: var(--txt-secondary);
+
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .container {
@@ -75,4 +86,24 @@ body {
     background-color: var(--icon-bg-tiktok);
     padding: 10px;
     border-radius: 50%;
+}
+
+.btn-goggle, .btn-facebook, .btn-youtube, .btn-tiktok {
+    width: 300px;
+    height: 50px;
+    margin-top: 16px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--btn-bg-primary);
+    color: var(--txt-primary);
+    cursor: pointer;
+}
+
+.btn-goggle:hover, .btn-facebook:hover, .btn-youtube:hover, .btn-tiktok:hover {
+    background-color: var(--btn-bg-hover);
+    color: white;
+    transition: 0.3s;
+
+    transform: rotate(2deg);
 }

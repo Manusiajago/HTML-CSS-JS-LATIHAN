@@ -15,7 +15,7 @@
     <header class="header">
         <div class="container-top">
             <!-- LOGO -->
-            <h1 class="title-logo">Movie<span>Finder</span></h1>
+            <h1 class="title-logo" id="titleLogo">Movie<span>Finder</span></h1>
 
             <form id="searchForm" action="#">
                 <input type="text" placeholder="Search movies" class="search-input" id="searchInput">
@@ -24,15 +24,16 @@
         </div>
 
         <div class="container-bottom">
+            <button class="beranda-movies" id="berandaMovies">Beranda pencarian</button>
             <button class="favorite-btn" id="favoriteButton">Favorite</button>
-            <button class="history-btn" id="HistoryButton">History</button>
+            <button class="history-btn" id="historyButton">History</button>
         </div>
     </header>
     <!-- HEADER END -->
 
     <!-- MAIN CONTENT MOVIE LIST -->
     <main class="main-content">
-        <h2 class="sub-title-main">Movie list</h2>
+        <h2 class="sub-title-main" id="subTitleList"></h2>
         <div class="line"></div>
 
         <div class="show-movies" id="showMovies">
@@ -55,8 +56,25 @@
                     </div>
                 </div> -->
         </div>
+        <div class="show-history" id="showHistory"></div>
         </div>
     </main>
+
+    <!-- PAGINATION -->
+    <footer class="container-footer">
+        <div class="pagination" id="pagination">
+            <!-- <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a> -->
+        </div>
+
+    </footer>
+    <!-- PAGINATION -->
 
 
     <script src="script.js"></script>

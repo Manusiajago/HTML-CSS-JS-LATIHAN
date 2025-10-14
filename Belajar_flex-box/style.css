@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Silkscreen", sans-serif;
+}
+
+:root {
+    --bg-primary: rgb(50, 57, 255);
+    --bg-secondary: #eaeaeaea;
+    --txt-primary: #f7f7ff;
+    --txt-secondary: #222222;
+
+    /* Icons */
+    --icon-bg-youtube: #ff0000;
+    --icon-bg-facebook: #3b5998;
+    --icon-bg-google: #4285F4;
+    --icon-bg-tiktok: #000000;
+}
+
+.card {
+    margin: 8px;
+    padding: 20px;
+    border: 2px solid white;
+    background-color: var(--bg-secondary);
+    color: var(--txt-secondary);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-primary);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.icons {
+    font-size: 24px;
+}
+
+.icons.fa-google {
+    color: var(--txt-primary);
+    background-color: var(--icon-bg-google);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icons.fa-facebook {
+    color: var(--txt-primary);
+    background-color: var(--icon-bg-facebook);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icons.fa-youtube {
+    color: var(--txt-primary);
+    background-color: var(--icon-bg-youtube);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icons.fa-tiktok {
+    color: var(--txt-primary);
+    background-color: var(--icon-bg-tiktok);
+    padding: 10px;
+    border-radius: 50%;
+}

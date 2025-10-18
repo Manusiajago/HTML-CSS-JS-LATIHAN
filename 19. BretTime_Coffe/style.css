@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: "Open Sans" , monospace;
+    font-family: sans-serif;
     background-color: #fffdf9;
     color:  #3b2f2f;
 }
@@ -55,6 +55,71 @@ body {
     color: #3b2f2f;
 }
 
+/* ============ HERO SECTION STYLES ================== */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px 5%;
+    background-color: #fffaf5;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 40px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #3b2f2f;
+    line-height: 1.3;
+}
+
+.hero-content h1 span {
+    color: #8b4513;
+    font-weight: 700;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    color: #5a4646;
+    max-width: 450px;
+    line-height: 1.6;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #8b4513;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #a0522d;
+}
+
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+/* ============ HERO SECTION STYLES END ================== */
+
 /* ================ RESPONSIVE =================== */
 @media screen and (max-width: 768px) {
     .nav-links {
@@ -78,6 +143,31 @@ body {
   .hamburger {
     display: block;
   }
+}
+
+/* =============== RESPONSIVE HERO ================= */
+@media screen and (max-width: 992px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-content {
+    margin-bottom: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    margin: 15px auto;
+  }
+
+  .hero-image img {
+    max-width: 80%;
+  }
+
 }
 
 /* ============== FADE IN ANIMATION ============== */

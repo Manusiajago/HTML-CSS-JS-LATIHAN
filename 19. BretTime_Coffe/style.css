@@ -1,0 +1,93 @@
+/* ============== RESET CSS ================= */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans" , monospace;
+    background-color: #fffdf9;
+    color:  #3b2f2f;
+}
+
+/* ============ NAVBAR STYLES ==================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color:  #f7f3ef;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow:  0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #3b2f2f;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3b2f2f;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #8b4513;
+}
+
+/* ============= HAMBURGER ICON ============= */
+.hamburger {
+    display: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: #3b2f2f;
+}
+
+/* ================ RESPONSIVE =================== */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        background-color:  #f7f3ef;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* ============== FADE IN ANIMATION ============== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

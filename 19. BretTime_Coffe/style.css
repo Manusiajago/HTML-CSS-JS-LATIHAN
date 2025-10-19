@@ -120,6 +120,77 @@ body {
 }
 /* ============ HERO SECTION STYLES END ================== */
 
+/* ============ FEATURES SECTION STYLES ================== */
+.features {
+    background-color: #f7f3ef;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    color: #3b2f2f;
+    margin-bottom: 50px;
+}
+
+.features h2 span {
+  color: #8b4513;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.features-item {
+    background: #fff;
+  flex: 1 1 300px;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.features-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.features-item h3 {
+    font-size: 1.3rem;
+    color: #5a4646;
+    margin-bottom: 10px;
+}
+
+.features-item p {
+    font-size: 0.95rem;
+    color: #5a4646;
+    line-height: 1.6;
+    max-width: 300px;
+    margin: 0 auto;
+}
+/* ============ FEATURES SECTION STYLES END ================== */
+
+
+
+
+
+
+
+
+
+
+
+
 /* ================ RESPONSIVE =================== */
 @media screen and (max-width: 768px) {
     .nav-links {
@@ -153,20 +224,32 @@ body {
     }
 
     .hero-content {
-    margin-bottom: 30px;
-  }
+        margin-bottom: 30px;
+    }
 
-  .hero-content h1 {
-    font-size: 2rem;
-  }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
 
-  .hero-content p {
-    margin: 15px auto;
-  }
+    .hero-content p {
+        margin: 15px auto;
+    }
 
-  .hero-image img {
-    max-width: 80%;
-  }
+    .hero-image img {
+        max-width: 80%;
+    }
+
+    /* =========== RESPONSIVE FEATURES ============= */
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features-item {
+        width: 100%;
+        max-width: 400px;
+    }
+    /* =========== RESPONSIVE FEATURES END ============= */
 
 }
 

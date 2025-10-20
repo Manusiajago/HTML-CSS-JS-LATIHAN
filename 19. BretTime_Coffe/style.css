@@ -290,6 +290,91 @@ body {
 
 /* ============= PRICING SECTION STYLES END ====================== */
 
+/* ============== TESTIMONIALS SECTION STYLES ===================== */
+.testimonials {
+    background-color: #f7f3ef;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    color: #3b2f2f;
+    margin-bottom: 40px;
+}
+
+.testimonials h2 span {
+    color: #8b4513;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.testimonials-card {
+    background-color: #fff;
+    padding: 35px 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    flex: 1 1 300px;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonials-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-text {
+    font-style: italic;
+    color: #5a4646;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.testimonial-text::before {
+    content: "“";
+    font-size: 2rem;
+    color: #8b4513;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+
+.testimonials-users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.testimonials-users img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #8b4513;
+}
+
+.testimonials-users .user-info h4 {
+    font-size: 1.2rem;
+    color: #3b2f2f;
+    margin-bottom: 5px;
+}
+
+.user-info span {
+    color: #5a4646;
+    font-size: 0.9rem;
+}
+
+/* ============== TESTIMONIALS SECTION STYLES END ===================== */
+
 
 
 
@@ -377,6 +462,18 @@ body {
     }
 
     /* =========== RESPONSIVE PRICING END ============= */
+
+    /* ============ RESPONSIVE TESTIMONIALS  */
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials-card {
+        max-width: 400px;
+    }
+
+    /* ============ RESPONSIVE TESTIMONIALS END */
 
 
 }

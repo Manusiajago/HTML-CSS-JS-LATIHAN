@@ -8,7 +8,7 @@
 body {
     font-family: sans-serif;
     background-color: #fffdf9;
-    color:  #3b2f2f;
+    color: #3b2f2f;
 }
 
 /* ============ NAVBAR STYLES ==================== */
@@ -17,11 +17,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 8%;
-    background-color:  #f7f3ef;
+    background-color: #f7f3ef;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow:  0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
@@ -103,7 +103,7 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #a0522d;
+    background-color: #a0522d;
 }
 
 
@@ -118,6 +118,7 @@ body {
 .hero-image img {
     max-width: 100%;
 }
+
 /* ============ HERO SECTION STYLES END ================== */
 
 /* ============ FEATURES SECTION STYLES ================== */
@@ -134,7 +135,7 @@ body {
 }
 
 .features h2 span {
-  color: #8b4513;
+    color: #8b4513;
 }
 
 .features-container {
@@ -146,11 +147,11 @@ body {
 
 .features-item {
     background: #fff;
-  flex: 1 1 300px;
-  border-radius: 10px;
-  padding: 30px 20px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 300px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .features-item:hover {
@@ -159,10 +160,10 @@ body {
 }
 
 .features-item img {
-  width: 120px;
-  height: 120px;
-  object-fit: contain;
-  margin-bottom: 20px;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 20px;
 }
 
 .features-item h3 {
@@ -178,7 +179,116 @@ body {
     max-width: 300px;
     margin: 0 auto;
 }
+
 /* ============ FEATURES SECTION STYLES END ================== */
+
+/* ============= PRICING SECTION STYLES ====================== */
+.pricing {
+    background-color: #fffaf5;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 2rem;
+    color: #3b2f2f;
+    margin-bottom: 20px;
+}
+
+.pricing h2 span {
+    color: #8b4513;
+}
+
+.pricing-subtitle {
+    color: #5a4646;
+    margin-bottom: 50px;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    padding: 40px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    flex: 1 1 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid transparent;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.pricing-card.highlight {
+    border-top: 4px solid #8b4513;
+    transform: scale(1.05);
+}
+
+.pricing-card h3 {
+    font-size: 1.8rem;
+    color: #3b2f2f;
+    margin-bottom: 10px;
+}
+
+.pricing-card .price {
+    font-size: 1.8rem;
+    color: #8b4513;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.price span {
+    font-size: 0.9rem;
+    color: #5a4646;
+}
+
+.pricing-card ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
+    color: #5a4646;
+    position: relative;
+    padding-left: 20px;
+}
+
+.pricing-card ul li::before {
+    content: "✓";
+    position: relative;
+    left: 0;
+    top: -3px;
+    margin-right: 5px;
+}
+
+.pricing-card .btn-secondary {
+    display: inline-block;
+    background-color: #8b4513;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #8b4513;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.pricing-card .btn-secondary:hover {
+    background-color: #8b4513;
+    color: #fff;
+}
+
+/* ============= PRICING SECTION STYLES END ====================== */
 
 
 
@@ -194,7 +304,7 @@ body {
 /* ================ RESPONSIVE =================== */
 @media screen and (max-width: 768px) {
     .nav-links {
-        background-color:  #f7f3ef;
+        background-color: #f7f3ef;
         position: absolute;
         top: 70px;
         right: 0;
@@ -209,11 +319,11 @@ body {
     .nav-links.active {
         display: flex;
         animation: fadeIn 0.3s ease-in-out;
-  }
+    }
 
-  .hamburger {
-    display: block;
-  }
+    .hamburger {
+        display: block;
+    }
 }
 
 /* =============== RESPONSIVE HERO ================= */
@@ -249,18 +359,37 @@ body {
         width: 100%;
         max-width: 400px;
     }
+
     /* =========== RESPONSIVE FEATURES END ============= */
+
+    /* =========== RESPONSIVE PRICING ============= */
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        max-width: 400px;
+    }
+
+    .pricing-card.highlight {
+        transform: none;
+    }
+
+    /* =========== RESPONSIVE PRICING END ============= */
+
 
 }
 
 /* ============== FADE IN ANIMATION ============== */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
